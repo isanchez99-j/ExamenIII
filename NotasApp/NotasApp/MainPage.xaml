@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotasApp.MainPage">
+
+    <StackLayout>
+        <ListView  BackgroundColor="White"  x:Name="ListaEmpleados" ItemSelected="ListaEmpleados_ItemSelected" RowHeight="300">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout  Padding="10" Margin="0,2,0,2">
+                            <StackLayout>
+                                <Label  Text="Descripción: " FontAttributes="Bold" TextColor="Black"/>
+                                <Label  Text="{Binding desc}" TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout>
+                                <Label  Text="Fecha: " FontAttributes="Bold" TextColor="Black"/>
+                                <Label  Text="{Binding fecha}" TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout>
+                                <Button Text="Play Sound" Clicked="Button_Clicked" CommandParameter="{Binding audioUrl}" />
+                            </StackLayout>
+                            <StackLayout>
+                                <Button Text="Stop Sound" Clicked="Button_Clicked_1" />
+                            </StackLayout>
+                            <StackLayout>
+                                <Image Source="{Binding imgUrl}" HeightRequest="200" WidthRequest="150"   MinimumWidthRequest="150"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

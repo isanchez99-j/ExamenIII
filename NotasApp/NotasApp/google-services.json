@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "305657334777",
+    "project_id": "notas-facc5",
+    "storage_bucket": "notas-facc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305657334777:android:1d4796c14e8841f4cc4b28",
+        "android_client_info": {
+          "package_name": "com.companyname.notasuth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305657334777-vih9pceufa8s2bvn3pav8jil7hn0lqb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASySoh4telBU5vTjVXyed6jTbZj9oS6FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305657334777-vih9pceufa8s2bvn3pav8jil7hn0lqb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
